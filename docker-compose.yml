@@ -1,0 +1,16 @@
+version: '3'
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - AZURE_DEVOPS_ORG=https://dev.azure.com/glic-afya
+      - AZURE_DEVOPS_PAT=
+      - START_DATE=2023-01-01
+      - END_DATE=2023-12-31
+      - REPORT_TYPE=pdf
+
+
+
+
